@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form style="min-height: 750px; height: auto; background-image: url({{ url_for('static', filename='img/food-bg-3.jpg') }});
+background-position: center;background-repeat: no-repeat;
+background-size: cover;" class="gr8-center gr8win2 lato" name="Input" method="POST" action="/recipe">
+		<br/>
+		<table align="center" class="gr8-center gr8-table" cellpadding="5" class="lato">
+			<tr>
+				<th>image</th>
+				<th>recipe name</th>
+				<th>ready in</th>
+				<th>prep time</th>
+				<th>cook time</th>
+				<th>link</th>
+			</tr>
+			{%for r in range(1,num_)%}
+			<tr>
+					<td><a><img src="{{ recipe_table.iloc[r,0] }}"alt="recipe image" width="100px"/></a></td>
+					{%for i in range(1,5)%}
+					<td>{{ recipe_table.iloc[r,i] }}</td>
+					{%endfor%}
+					<td><a href="{{ recipe_table.iloc[r,5] }}" target="_blank">recipe link</td></tr>
+			{%endfor%}
+		</table>
+</form>
+{% endblock %}

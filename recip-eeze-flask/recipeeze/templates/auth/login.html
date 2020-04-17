@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form style="height: 750px; background-image: url({{ url_for('static', filename='img/food-bg-4.jpg') }});background-position: center;background-repeat: no-repeat;background-size: cover;" class="gr8-center gr8win2 lato" method="post">
+<br/>
+<tr>
+  <td><strong>username</strong></td>
+  <input name="username" id="username" size="20" required>
+</tr>
+<br/>
+<tr>
+  <td><strong>password</strong></td>
+  <input type="password" name="password" id="password" size="20" required>
+</tr>
+<br/>
+  <input class="gr8-form gr8-btn-in" type="submit" value="log in">
+</form>
+{% endblock %}

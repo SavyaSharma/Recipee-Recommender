@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<!--
+	Author: Todd McCullough
+	Filename: index.html
+	Date: 27 February 2020
+	Description: Header used at the top of all pages for the site.
+	-->
+<title>Recip-Eeze</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./css/gr8css.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/gr8css.css') }}">
+<table class="gr8-table" style="width:100%">
+  <tr>
+  <td align="left" width="120px"><a class="lato" href="{{ url_for('auth.register') }}">Register</a></td>
+ 	<td class="gr8-header"><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/recip-eeze-logo.png') }}" alt="Recip-eeze Logo" height="50px"/></a></td>
+  {% if g.user %}
+  <td align="right" width="120px"><a class="lato" href="{{ url_for('auth.logout') }}">{{ g.user['username'] }} log out</a></td>
+  {% else %}
+  <td align="right" width="120px"><a class="lato" href="{{ url_for('auth.login') }}">log in</a></td>
+  {% endif %}
+  </tr>
+</table>
+</head>
+<body class="gr8-body">
+</div>
+
+<section>
+ {% block content %}{% endblock %}
+</section>
+
+
+<footer class="gr8-footer">
+	<table style="width:100%">
+		<tr>
+			<td align="left"><h4 class="berk">Recip-eeze</h4></td>
+			<td align="right"><a href="http://www.durhamcollege.ca" target="_blank"><img src="{{ url_for('static', filename='img/dc_logo-dark.png') }}"alt="DC Logo" width="80px"/></a></td>
+		</tr>
+	</table>
+</footer>
+
+</body>

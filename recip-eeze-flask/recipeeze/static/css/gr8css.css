@@ -1,0 +1,32 @@
+/*
+	Todd McCullough
+	gr8css.css
+	2020-02-27
+*/
+.gr8-background{background-position: center;background-repeat: no-repeat;background-size: cover;}
+.gr8-border{border:10px red;}
+.gr8-btn{background-color:#F5F0F0;border: none;color: #ff0066;padding: 4px 128px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;}
+.gr8-btn-shrt{background-color:red;border-radius: 8px;border: none;color: white;padding: 6px 16px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;}
+.gr8-btn-in{font-size:18px;border:none;display:inline-block;padding:2px 8px;vertical-align:middle;overflow:hidden;text-decoration:none;text-align:center;cursor:pointer;white-space:nowrap}
+.gr8-text{color:#795548 !important}
+.gr8-text-1{color:#fdf8f7; font-size:18px!important}
+.gr8-text-2{color:#4d3333;font-size:18px!important}
+.gr8-header{align:center;text-align:center;height:60px;color:#2e1f1f;background-color:#fff;border:none;}
+.gr8-body{background-color:#F5F0F0;font-family: sans-serif;}
+.gr8ient{color:#fff;background-color:#003B46;background-image:linear-gradient(to bottom right,#1922d4, #613fe9)}
+.gr8ient-dark{color:#fff;background-color:#003B46;background-image: linear-gradient(#003B46, #07575B)}
+.gr8-form{color:#ffffff;background-color:inherit;border:none;}
+.gr8win1{color:#fdf8f7;font-size:18px!important;border:none;}
+.gr8win2{color:#ffffff;font-size:18px!important;border:none;}
+.gr8-footer{color:#2e1f1f;background-color:#ffffff;border:none;}
+.gr8-table{color:#666;background-color:#ffffff;border:none;}
+.lato{font-family: 'Lato', sans-serif;}
+.mont{font-family: 'Montserrat', serif;}
+.berk{font-family: 'Berkshire Swash', cursive;}
+.gr8-center{margin:auto;text-align: center;padding:10px;}
+.h2{margin-bottom: -0.6em;}
+.h1{font-size: 6.5em;margin: -0.5em;}
+/*
+from gr8-body  color:#2e1f1f;
+background-color:#F5F0F0;
+*/

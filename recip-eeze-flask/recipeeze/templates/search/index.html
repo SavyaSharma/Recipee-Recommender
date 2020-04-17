@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form style="height: 750px; background-image: url({{ url_for('static', filename='img/food-bg-2.jpg') }});
+background-position: center;background-repeat: no-repeat;
+background-size: cover;" class="gr8-center gr8win1 lato" name="Input" method="POST" action="/recipe">
+		<br/>
+		<table align="center" cellpadding="5" class="lato">
+			<tr>
+				<td><strong>list the ingredients you have on hand</strong></td></tr><tr>
+				<td><input type="text" id="ingredients" name="ingredients" value="" size="50" /></td>
+			</tr>
+		</table>
+				<button type="submit" class="gr8-form gr8-btn-in">search</button>
+</form>
+
+{% endblock %}
